@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Watson - Búsquedas cognitivas - IBM Montevideo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+	<link href="/css/all.css" rel="stylesheet" type="text/css">
+	<link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="results">
+	<div class="wrapper">
+		<header class="header">
+			<img src="/img/bee_128.png" alt="Logo de IBM - Abeja"></img>
+			<h1>
+				<strong>Watson</strong> - Búsquedas cognitivas
+			</h1>
+		</header>
+		<article class="content-search" id="content-aux">
+			<section>
+				<form class="input-search" action="results.html">
+					<input class="input-field" name="search" id="result-search"> <a href="" class="icon" id="icon-search-button"><img
+							src="/img/search.png" width="30" height="30" alt="Icono para realizar búsquedas"></img></a>
+				</form>
+
+			</section>
+
+		</article>
+		<article class="search-bck-wht" id="content-result">
+			<!--	<section>
+				<h3>Query 1</h3>
+				<p>Mauris commodo metus sed ante dignissim ultrices. Sed aliquet
+					ligula tincidunt cursus auctor. Quisque efficitur turpis sit amet
+					mattis feugiat. Sed non eleifend orci. Praesent auctor gravida
+					justo, nec ornare diam auctor quis.</p>
+				<a href="#">Mauris commodo metus sed</a>
+			</section>
+			<section>
+				<h3>Query 2</h3>
+
+				<p>Mauris commodo metus sed ante dignissim ultrices. Sed aliquet
+					ligula tincidunt cursus auctor. Quisque efficitur turpis sit amet
+					mattis feugiat. Sed non eleifend orci. Praesent auctor gravida
+					justo, nec ornare diam auctor quis.</p>
+				<a href="#">Mauris commodo metus sed</a>
+			</section>-->
+		</article>
+		<a onclick="openNav();" class="float" title="Ver estadísticas"> <i class="far fa-2x fa-file-alt my-float"></i>
+		</a>
+		<div id="myModal" class="modal" style="display: none">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close"> &times;</span>
+				<!--<p class="noborder">
+					Intención detectada: <span class="tag-result">#LOREM_IPSUM</span>
+					97% confianza
+				</p>-->
+			</div>
+		</div>
+		<div id="stats" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<h2>Estadísticas</h2>
+				<div class="row">
+					<div class="column left">
+						<h3>Query 1</h3>
+						<div class="tags">
+							<p>
+								<span>#LOREM_IPSUM</span> Mauris commodo metus sed ante
+								dignissim ultrices. Sed aliquet ligula tincidunt cursus auctor
+							</p>
+							<p>
+								<span>#LOREM_IPSUM</span> Mauris commodo metus sed ante
+								dignissim ultrices. Sed aliquet ligula tincidunt cursus auctor
+							</p>
+						</div>
+						<h3>Query 2</h3>
+						<div class="tags">
+							<p>
+								<strong>Praesent auctor gravida</strong> Mauris commodo metus
+								sed ante dignissim ultrices. Sed aliquet ligula tincidunt cursus
+								auctor
+							</p>
+
+						</div>
+					</div>
+					<div class="column right">
+						<h3>Resultados</h3>
+						<div class="numbers">
+							<p>
+								<strong class="even">30%</strong>Mauris commodo metus
+							</p>
+							<p>
+								Mauris commodo metus<strong class="odd">99%</strong>
+							</p>
+							<p>
+								<strong class="even">30%</strong>Mauris commodo metus
+							</p>
+							<p>
+								Mauris commodo metus<strong class="odd">30%</strong>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<footer class="footer">
+			<img src="/img/ibm_vector_wh.png" alt="Logo IBM"></img>
+			<div>
+				<p>This system is for demonstration purposes only and is not
+					intended to process Personal Data. No Personal Data is to be
+					entered into this system as it may not have the necessary controls
+					in place to meet the requirements of the General Data Protection
+					Regulation (EU) 2016/679</p>
+				<p>Design by IBM iX @Copyright 2019</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/results.js"></script>
+	<script src="js/api.js"></script>
+</body>
+
+</html>

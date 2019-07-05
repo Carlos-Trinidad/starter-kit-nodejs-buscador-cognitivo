@@ -1,0 +1,10 @@
+applications:
+  - name: 'starter-kit-nodejs-buscador-cognitivo'
+    memory: 256M
+    instances: 1
+    services:
+      - NOMBRE_SERVICIO_DISCOVERY
+      - NOMBRE_SERVICIO_ASSISTANT
+    env:
+      discovery_environments: '[{"name": "<NOMBRE_ENVIRONMENT>","environment_id": "<ENVIRONMENT_ID>","collections": [{"name": "<NOMBRE_COLLECTION>","collection_id": "<COLLECTION_ID>"}]}]'
+      assistant_id: '<ASSISTANT_ID>'

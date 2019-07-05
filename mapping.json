@@ -1,0 +1,26 @@
+{
+    "discovery_credentials": {
+        "searchPatterns": [
+            "cloudfoundry:$.*[?(@.name == 'nombre-instancia-discovery')].credentials",
+            "file:/localdev/env.json:$.discovery.credentials"
+        ]
+    },
+    "discovery_environments": {
+        "searchPatterns": [
+            "env:discovery_environments",
+            "file:/localdev/env.json:$.discovery.environments"
+        ]
+    },
+    "assistant_credentials": {
+        "searchPatterns": [
+            "cloudfoundry:$.*[?(@.name == 'nombre-instancia-assistant')].credentials",
+            "file:/localdev/env.json:$.assistant.credentials"
+        ]
+    },
+    "assistant_id": {
+        "searchPatterns": [
+            "env:assistant_id",
+            "file:/localdev/env.json:$.assistant.assistant_id"
+        ]
+    }
+}
